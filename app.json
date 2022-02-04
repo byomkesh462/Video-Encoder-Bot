@@ -18,17 +18,7 @@
       "description": "Setting this to ANYTHING will enable VARs when in ENV mode",
       "value": "ANYTHING"
     },
-    "SESSION_NAME": {
-      "description": "Keep this default",
-      "value": "AHCompressBot",
-      "required": true
-    },
-    "DATABASE_URL": {
-      "description": "Your MongoDB URL for Database. Ask in Support Group: https://t.me/linux_repo",
-      "value": "",
-      "required": true
-    },
-    "TG_BOT_TOKEN": {
+    "BOT_TOKEN": {
       "description": "Your bot token, as a string. Get this from @BotFather",
       "value": "",
       "required": true
@@ -43,32 +33,54 @@
       "value": "",
       "required": true
     },
-    "AUTH_USERS": {
-      "description": "Allow only pre-defined users to use this bot as Sudo User. Separate with Space. Just for using Admin Commands.",
+    "SUDO_USERS": {
+      "description": "List of sudo user's id, separated by space.",
       "value": "715779594",
-      "required": false
-    },
-    "FINISHED_PROGRESS_STR": {
-      "description": "Should be a single character.",
-      "required": false
-    },
-    "UN_FINISHED_PROGRESS_STR": {
-      "description": "Should be a single character.",
-      "required": false
-    },
-    "BOT_USERNAME": {
-      "description": "Your Bot Username. Without `@` before Username!",
-      "value": "",
       "required": true
     },
-    "LOG_CHANNEL": {
-      "description": "Your Bot's Log Channel's Username. For Help ask in @linux_repo",
-      "value": "",
+    "RESOLUTION": {
+      "description": "For reference visit https://weeb-zone.blogspot.com/p/encode-telegram-bot-guide.html",
+      "value": "Source",
       "required": true
     },
-    "UPDATES_CHANNEL": {
-      "description": "Do Force Sub! Add your Channel username which you want to do Force Sub. Read README.md file first!",
-      "value": "",
+    "PRESET": {
+      "description": "For reference visit https://weeb-zone.blogspot.com/p/encode-telegram-bot-guide.html",
+      "value": "vf",
+      "required": true
+    },
+    "TUNE": {
+      "description": "For reference visit https://weeb-zone.blogspot.com/p/encode-telegram-bot-guide.html",
+      "value": "film",
+      "required": true
+    },
+    "AUDIO": {
+      "description": "For reference visit https://weeb-zone.blogspot.com/p/encode-telegram-bot-guide.html",
+      "value": "opus",
+      "required": true
+    },
+    "CRF": {
+      "description": "For reference visit https://weeb-zone.blogspot.com/p/encode-telegram-bot-guide.html",
+      "value": "28",
+      "required": true
+    },
+    "DOC_THUMB": {
+      "description": "(Optional) Thumbnail for document",
+      "value": "0",
+      "required": false
+    },
+    "UPLOAD_AS_DOC": {
+      "description": "(Optional) Uploads Video as doc if 1 else 0",
+      "value": "0",
+      "required": false
+    },
+    "DOWNLOAD_DIR": {
+      "description": "(Optional) Temporary download directory to keep downloaded files.",
+      "value": "VideoEncoder/utils/downloads/",
+      "required": false
+    },
+    "ENCODE_DIR": {
+      "description": "(Optional) Temporary encode directory to keep encoded files.",
+      "value": "VideoEncoder/utils/encodes/",
       "required": false
     }
   },
